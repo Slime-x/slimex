@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slime-x | Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-container">
+            <div class="logo-image">
+                <img src="r.png" alt="Logo" />
+            </div>
+            <div class="logo-text">Slime-x</div>
+        </a>
+        <nav>
+            <div class="dropdown">
+                <button class="dropbtn">Contacts &#x25BC;</button>
+                <div class="dropdown-content">
+                    <div class="email-hover">
+                        <a href="mailto:your.email@example.com" target="_blank">
+                            Email
+                            <span class="email-preview">your.email@example.com</span>
+                        </a>
+                    </div>
+                    <a href="https://github.com/Slime-x" target="_blank">GitHub</a>
+                    <a href="https://facebook.com/your.profile" target="_blank">Facebook</a>
+                    <a href="https://instagram.com/your.profile" target="_blank">Instagram</a>
+                    <a href="https://matrix.org" target="_blank">Matrix</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Services &#x25BC;</button>
+                <div class="dropdown-content">
+                    <a href="#webdev">Web Development</a>
+                    <a href="#design">Website Design</a>
+                    <a href="#consult">Consulting</a>
+                    <a href="#review">Code Review</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Media Lists &#x25BC;</button>
+                <div class="dropdown-content">
+                    <a href="https://myanimelist.net/profile/YourUsername" target="_blank">Anime List</a>
+                    <a href="https://anilist.co/user/YourUsername/mangalist" target="_blank">Manga/Manhwa List</a>
+                    <a href="https://novelupdates.com/readlist/" target="_blank">Novel List</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">About Me &#x25BC;</button>
+                <div class="dropdown-content">
+                    <a href="#about">Who am I?</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="about" id="about">
+            <h1>Hello, I'm <span class="highlight">Slime-x</span>!</h1>
+            <p>
+                My real name is AMIT PANDEY. I was born on 2009-10-01. This is my website that tells about me and the things that i need. You can contact me from the given links, use my services for some money or just know me better. A fun fact actually, This website was made under 30 mins. Meaning that making a website in not hard at all, You can view this website on any browser though the link is a bit unconcenvional. 
+            </p>
+        </section>
+
+        <!-- Social Media Cards Section -->
+        <section class="social-media">
+            <h2>Connect With Me</h2>
+            <div class="social-cards">
+                <a href="https://facebook.com/your.profile" target="_blank" class="social-card facebook">
+                    <div class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <h3>Facebook</h3>
+                    <p>Follow my journey</p>
+                </a>
+                <a href="https://instagram.com/your.profile" target="_blank" class="social-card instagram">
+                    <div class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>Visual updates</p>
+                </a>
+                <a href="https://matrix.org" target="_blank" class="social-card matrix">
+                    <div class="social-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Matrix</h3>
+                    <p>Secure messaging</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <h2>What I Can Do For You</h2>
+            <div class="cards">
+                <div class="card" id="webdev">
+                    <h3>Web Development</h3>
+                    <p>Modern, responsive websites using HTML, CSS, JavaScript, and more.</p>
+                </div>
+                <div class="card" id="design">
+                    <h3>Website Design</h3>
+                    <p>Custom visual design, branding, and UI/UX for your online presence.</p>
+                </div>
+                <div class="card" id="consult">
+                    <h3>Consulting</h3>
+                    <p>Get advice and solutions for your technical, web, or business challenges.</p>
+                </div>
+                <div class="card" id="review">
+                    <h3>Code Review</h3>
+                    <p>Professional code review, debugging, and optimization for your projects.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Slime-x. All rights reserved.
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script>
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener("scroll", () => {
+            const header = document.querySelector("header");
+            const currentScrollY = window.scrollY;
+            
+            if (currentScrollY > lastScrollY) {
+                header.classList.add("header--hidden");
+            } else {
+                header.classList.remove("header--hidden");
+            }
+            
+            lastScrollY = currentScrollY;
+        });
+    </script>
+</body>
+</html>
